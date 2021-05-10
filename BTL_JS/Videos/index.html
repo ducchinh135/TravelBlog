@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/styles_home.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header--container center">
+            <div id="logo"><a href="./home.html">Travel Blog</a></div>
+            <ul id="nav">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/travel.html">Travel</a></li>
+                <li><a href="../html/eat.html">Eat</a></li>
+                <li><a href="../html/relax.html">Relax</a></li>
+                <li><a href="../Videos/index.html">Videos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="blog_travel">
+        <div class="title">
+            <h2>Videos</h2>
+        </div>
+        <div class="content">
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                It’s easy. Just click “Edit Text” or
+                double click me
+                to add your own content and make changes to the font.
+            </p>
+        </div>
+        <div class="videotop" style="margin-top: 20px;">
+            <iframe width="940" height="528" src="https://www.youtube.com/embed/RtgJ5XpkBYY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="search">
+            <i id="icon_search" style="color: #000000B3;" class="fas fa-search"></i>
+            <input id="ser" style="border:none; font-size: 20px;" type="text" data-hook="search-bar-input"
+                placeholder="Search video..." value="" onfocus="search()" onblur="not_search()" onchange="change()">
+
+            <select id="Select" style="margin-left: 530px; color: #000000B3; border:0px;font-size: 20px;">
+                <option value="0"> <u> All Categories </u></option>
+                <option value="1" onclick="Extreme()">Extreme</option>
+                <option value="2">Travel</option>
+            </select>
+
+        </div>
+        <div class="videos">
+            <div class="chuyen_slide">
+
+            </div>
+
+        </div>
+
+        <div class="item">
+            <i id="icon" class="fas fa-long-arrow-alt-right" onclick="changePage()"></i>
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="contact--icon">
+            <div class="icon--social">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <p class="icon--name">Facebook</p>
+                </a>
+            </div>
+            <div class="icon--social">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    <p class="icon--name">Instagram</p>
+                </a>
+            </div>
+            <div class="icon--social">
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                    <p class="icon--name">Pinterest</p>
+                </a>
+            </div>
+            <div class="icon--social">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    <p class="icon--name">Twitter</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer--about">
+            <img src="../img/author.jpg" />
+            <div class="about--content">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ducimus, eius hic dolores neque
+                    nesciunt tempore rerum sit omnis veritatis doloribus eaque exercitationem nostrum, vel esse
+                    corporis doloremque. Dolores, veniam.</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+
+        <div class="footer--subcribe">
+            <h2>Join My Mailing List</h2>
+            <p>Email</p>
+            <input type="email" id="emailUser" value placeholder="Enter your email here" />
+            <button>Subcribe Now</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
