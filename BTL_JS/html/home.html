@@ -7,117 +7,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styles_home.css">
-    <link rel="stylesheet" href="../css/styles_blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <!---------------- Cutom Styles -------------------------------->
+    <link rel="stylesheet" href="../css/styles_home.css">
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <div class="header--container center">
-                <div id="logo"><a href="./home.html">Travel Blog</a></div>
-                <ul id="nav">
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./travel.html">Travel</a></li>
-                    <li><a href="./eat.html">Eat</a></li>
-                    <li><a href="./relax.html">Relax</a></li>
-                    <li><a href="../Videos/index.html">Videos</a></li>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Travel</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Eat</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Relax</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Videos</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="slider">
-            <div class="slider--text">
-                <h2 class="text--heading">Going Places</h2>
-                <div class="text--description">Just go because life allows</div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
+    </nav>
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
 
-        <div class="content">
-            <div class="content--section">
-                <p class="section--text">
-                    It’s a big world out there, go explore.
-                </p>
-                <div class="theme--list">
-                    <div class="theme--item">
-                        <img src="../img/Travel.jpg" />
-                        <a href="" class="theme--name center--theme">Travel</a>
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+        <!------------------------ Site Title ---------------------->
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place on Earth</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="../img/Slide01.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Travel to live, Live to travel</h3>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="../img/Slide02.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Keep calm & travelling On</h3>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="../img/Slide03.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Say yes to new adventures</h3>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="../img/Slide04.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Go and see all you possibly can</h3>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="../img/Slide05.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Travel more to discover yourself</h3>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="../img/Slide06.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Don’t be a tourist, be a traveler</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="theme--item">
-                        <img src="../img/Eat.jpg" />
-                        <a href="" class="theme--name center--theme">Eat</a>
-                    </div>
-                    <div class="theme--item">
-                        <img src="../img/Relax.jpg" />
-                        <a href="" class="theme--name center--theme">Relax</a>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="blog">
-            <div class="blog--content">
-                <div class="blog--container" id="listBlock">
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
 
+        <!-- ---------------------- Site Content -------------------------->
+
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <!-- <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="../img/img_travel1.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
+                                <span>2 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Why should boys have all the fun? it's the women who are making india an
+                                alcohol-loving contry</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde?
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr> -->
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- -----------x---------- Site Content -------------x------------>
 
+    </main>
 
-        <div class="contact">
-            <div class="contact--icon">
-                <div class="icon--social">
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                        <p class="icon--name">Facebook</p>
-                    </a>
-                </div>
-                <div class="icon--social">
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                        <p class="icon--name">Instagram</p>
-                    </a>
-                </div>
-                <div class="icon--social">
-                    <a href="#">
-                        <i class="fab fa-pinterest-p"></i>
-                        <p class="icon--name">Pinterest</p>
-                    </a>
-                </div>
-                <div class="icon--social">
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                        <p class="icon--name">Twitter</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <!--------------x-------------- Main Site Section --------------x--------------->
 
-        <div class="footer">
-            <div class="footer--about">
-                <img src="../img/author.jpg" />
-                <div class="about--content">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ducimus, eius hic dolores neque
-                        nesciunt tempore rerum sit omnis veritatis doloribus eaque exercitationem nostrum, vel esse
-                        corporis doloremque. Dolores, veniam.</p>
-                    <a href="">Read More</a>
-                </div>
-            </div>
+    <!-- Jquery Library file -->
+    <script src="../js/Jquery3.4.1.min.js"></script>
 
-            <div class="footer--subcribe">
-                <h2>Join My Mailing List</h2>
-                <p>Email</p>
-                <input type="email" id="emailUser" value placeholder="Enter your email here" />
-                <button>Subcribe Now</button>
-            </div>
-        </div>
-    </div>
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="../js/owl.carousel.min.js"></script>
 
-    <script src="../js/index_eat.js"></script>
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="../js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="../js/main.js"></script>
+
+    <script src="../js/index_travel.js"></script>
+
 </body>
 
 </html>
