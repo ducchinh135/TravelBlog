@@ -7,7 +7,7 @@ start();
 
 function getPosts(callback) {
     fetch(postApi)
-        .then(function (reponsive) {
+        .then(function(reponsive) {
             return reponsive.json();
         })
         .then(callback)
@@ -15,7 +15,7 @@ function getPosts(callback) {
 
 function renderPosts(posts) {
     let postBlock = document.querySelector(".posts");
-    let htmls = posts.map(function (post) {
+    let htmls = posts.map(function(post) {
         return `
         <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
             <div class="post-image">
@@ -29,10 +29,10 @@ function renderPosts(posts) {
                 </div>
             </div>
             <div class="post-title">
-                <a href="#">${post.title}</a>
+                <a href="../html/travel_${post.id}.html">${post.title}</a>
                 <p>${post.mainHead}
                 </p>
-                <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                <button class="btn post-btn"><a href="../html/travel_${post.id}.html">Read More &nbsp; <i class="fas fa-arrow-right"></i></a></button>
             </div>
         </div>
         <hr>`
