@@ -30,7 +30,7 @@ function renderPosts(posts) {
             </div>
             <div class="post-title">
                 <a href="#">${post.title}</a>
-                <p>${post.mainhead}
+                <p>${post.mainHead}
                 </p>
                 <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
             </div>
